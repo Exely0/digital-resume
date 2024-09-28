@@ -90,39 +90,34 @@
       <div
         class="grid h-[1500px] grid-cols-2 gap-8 bg-myviolet px-24 text-black [&>div]:justify-self-center [&>div]:self-center"
       >
-        <div>
+        <div class="">
           <div
-            class="mr-auto grid grid-cols-[1fr_4fr] text-3xl font-semibold tracking-wider"
+            class="[&>.timeline-diag]:h-[70px] [&>.timeline-diag]:scale-125 [&>.timeline-text]:p-4 [&>.timeline-text]:bg-myyellow z-10 [&>.timeline-text]:neobrutalism hover:[&>.timeline-text]:neobrutalism-hover grid grid-cols-[repeat(3,1fr)] text-3xl font-semibold tracking-wider [&>div]:flex [&>div]:items-center [&>div]:justify-center [&>div]:text-center"
           >
-            <div class="flex items-center justify-end pr-4">2019</div>
-            <div
-              class="border-mypink relative flex items-center border-4 border-l-myblue py-4 pl-4 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-3 before:-translate-x-[64%] before:-translate-y-1/2 before:rounded-full before:bg-white"
-            >
+            <div class="timeline-text col-[3] row-[1]">
+              2020<br />
               Licence 1 Mathématiques
             </div>
-            <div class="flex items-center justify-end pr-4">2021</div>
-            <div
-              class="border-mypink relative flex items-center border-4 border-l-myblue py-4 pl-4 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-3 before:-translate-x-[64%] before:-translate-y-1/2 before:rounded-full before:bg-white"
-            >
+            <div class="timeline-diag col-[2] row-[2] diag-rl"></div>
+            <div class="timeline-text col-[1] row-[3]">
+              2021<br />
               Licence 1 Informatique
             </div>
-            <div class="flex items-center justify-end pr-4">2022</div>
-            <div
-              class="border-mypink relative flex items-center border-4 border-l-myblue py-4 pl-4 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-3 before:-translate-x-[64%] before:-translate-y-1/2 before:rounded-full before:bg-white"
-            >
+            <div class="timeline-diag col-[2] row-[4] diag-lr"></div>
+            <div class="timeline-text col-[3] row-[5]">
+              2022<br />
               Licence 2 Informatique
             </div>
-            <div class="flex items-center justify-end pr-4">2023</div>
-            <div
-              class="border-mypink relative flex items-center border-4 border-l-myblue py-4 pl-4 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-3 before:-translate-x-[64%] before:-translate-y-1/2 before:rounded-full before:bg-white"
-            >
+            <div class="timeline-diag col-[2] row-[6] diag-rl"></div>
+            <div class="timeline-text col-[1] row-[7]">
+              2023<br />
+
               Licence 3 Informatique
             </div>
-            <div class="flex items-center justify-end pr-4">2024</div>
-            <div
-              class="border-mypink relative flex items-center border-4 border-l-myblue py-4 pl-4 before:absolute before:left-0 before:top-1/2 before:h-3 before:w-3 before:-translate-x-[64%] before:-translate-y-1/2 before:rounded-full before:bg-white"
-            >
-              PreMsc Epitech
+            <div class="timeline-diag col-[2] row-[8] diag-lr"></div>
+            <div class="timeline-text col-[3] row-[9]">
+              2024<br />
+              Pre-Msc Epitech
             </div>
           </div>
         </div>
@@ -265,68 +260,108 @@
     </div>
     <!--end blue-->
     <!--start orange-->
-    <div class="scroll-padding: 100px snap-center snap-always text-black">
+    <div class="scroll-padding-[100px] snap-center snap-always text-black">
       <!--start orange main-->
       <div
-        class="grid h-[1500px] grid-cols-2 bg-myorange px-24 [&>div]:flex [&>div]:items-center [&>div]:justify-center"
+        class="h-[1500px] flex items-center justify-center bg-myorange px-24"
       >
-        <div class="flex-col gap-10">
+        <div class="grid grid-cols-2 gap-8 [&>div]:self-stretch">
           <div
-            class="my-spin relative z-[60] flex aspect-square w-[600px] gap-10 duration-[10s] [&>div]:aspect-square [&>div]:w-[220px] [&>div]:cursor-pointer [&>div]:rounded-full"
+            class="row-[1] col-[2] py-4 px-8 text-[1rem] md:text-[2rem] lg:text-[3rem] self-stretch text-center font-semibold neobrutalism hover:neobrutalism-hover bg-myyellow"
           >
-            <div class="my-spin-rev absolute left-0 top-0">
-              <a
-                class="block"
-                href="https://github.com/Exely0/"
-                target="_blank"
-                rel="noopener noreferrer"
+            Contactez-moi via le formulaire ou par les réseaux sociaux
+          </div>
+          <div
+            class="row-[2] col-[2] py-4 px-8 text-[2rem] self-stretch text-center font-semibold neobrutalism hover:neobrutalism-hover bg-mygreen"
+          >
+            <form
+              class="flex flex-col gap-4 [&>*]:neobrutalism [&>*]:p-3 [&>*]:neobrutalism-hover text-black"
+            >
+              <input
+                type="text"
+                class="bg-mypink max-w-full outline-none"
+                placeholder="Nom"
+              />
+              <input
+                type="text"
+                class="bg-mypink max-w-full outline-none"
+                placeholder="Prénom"
+              />
+              <input
+                type="email"
+                class="bg-mypink max-w-full outline-none"
+                placeholder="Adresse mail"
+              />
+              <textarea class="bg-mypink max-w-full outline-none" rows="4">
+  Ecrivez ce que vous voulez ici ..</textarea
               >
-                <img
-                  class="w-full object-cover transition-all duration-300 hover:scale-110"
-                  src="./images/github.png"
-                />
-              </a>
-            </div>
-            <div class="my-spin-rev absolute right-0 top-0">
-              <a
-                class="block"
-                href="https://www.linkedin.com/in/lorris-pons-5180502a9/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="submit"
+                class="bg-myviolet text-white p-3 rounded-lg hover:bg-myviolet-dark transition-all duration-300"
               >
-                <img
-                  class="w-full object-cover hover:scale-110 transition-all duration-300"
-                  src="./images/linkedin.png"
-                />
-              </a>
-            </div>
-            <div class="my-spin-rev absolute bottom-0 right-0">
-              <a
-                class="block"
-                href="mailto:lorris.pons@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  class="w-full object-cover hover:scale-110 transition-all duration-300"
-                  src="./images/mail.png"
-              /></a>
-            </div>
-            <div class="my-spin-rev absolute bottom-0 left-0">
-              <a
-                class="block"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="w-full object-cover hover:scale-110 transition-all duration-300"
-                  src="./images/discord.png"
-                />
-              </a>
+                Envoyer
+              </button>
+            </form>
+          </div>
+          <div
+            class="row-span-2 col-[1] bg-myviolet p-24 flex items-center justify-center neobrutalism hover:neobrutalism-hover"
+          >
+            <div
+              class="my-spin relative z-[60] flex aspect-square w-[600px] gap-10 duration-[10s] [&>div]:aspect-square [&>div]:w-[220px] [&>div]:cursor-pointer [&>div]:rounded-full"
+            >
+              <div class="my-spin-rev absolute left-0 top-0">
+                <a
+                  class="block"
+                  href="https://github.com/Exely0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="w-full object-cover transition-all duration-300 hover:scale-110"
+                    src="./images/github.png"
+                  />
+                </a>
+              </div>
+              <div class="my-spin-rev absolute right-0 top-0">
+                <a
+                  class="block"
+                  href="https://www.linkedin.com/in/lorris-pons-5180502a9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="w-full object-cover hover:scale-110 transition-all duration-300"
+                    src="./images/linkedin.png"
+                  />
+                </a>
+              </div>
+              <div class="my-spin-rev absolute bottom-0 right-0">
+                <a
+                  class="block"
+                  href="mailto:lorris.pons@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="w-full object-cover hover:scale-110 transition-all duration-300"
+                    src="./images/mail.png"
+                /></a>
+              </div>
+              <div class="my-spin-rev absolute bottom-0 left-0">
+                <a
+                  class="block"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="w-full object-cover hover:scale-110 transition-all duration-300"
+                    src="./images/discord.png"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="text-[5rem] font-semibold">Comment me contacter</div>
       </div>
       <!--end orange main-->
     </div>

@@ -8,6 +8,34 @@
   box-sizing: border-box;
 }
 
+/* html {
+  font-size: 16px;
+  @screen md {
+    font-size: 17px;
+  }
+  @screen lg {
+    font-size: 18px;
+  }
+} */
+
+.diag-lr {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M1 0 L0 1 L99 100 L100 99' stroke='black' stroke-width='9' /></svg>");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:
+    100% 100%,
+    auto;
+}
+
+.diag-rl {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M0 99 L99 0 L100 1 L1 100' stroke='black' stroke-width='8' /></svg>");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:
+    100% 100%,
+    auto;
+}
+
 .grid-areas {
   grid-template-areas:
     "a a a c"

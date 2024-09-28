@@ -907,16 +907,12 @@ video {
   font-size: 10rem;
 }
 
-.text-\[12rem\] {
-  font-size: 12rem;
-}
-
-.text-\[36rem\] {
-  font-size: 36rem;
-}
-
 .text-\[5rem\] {
   font-size: 5rem;
+}
+
+.text-\[8rem\] {
+  font-size: 8rem;
 }
 
 .font-bold {
@@ -931,12 +927,12 @@ video {
   font-weight: 600;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-black {
@@ -1043,6 +1039,22 @@ video {
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-\[20rem\] {
+    font-size: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-\[12rem\] {
+    font-size: 12rem;
+  }
+
+  .lg\:text-\[36rem\] {
+    font-size: 36rem;
   }
 }
 

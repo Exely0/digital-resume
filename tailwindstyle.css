@@ -1056,6 +1056,18 @@ video {
   .lg\:text-\[36rem\] {
     font-size: 36rem;
   }
+
+  .lg\:text-\[10rem\] {
+    font-size: 10rem;
+  }
+
+  .lg\:text-\[8rem\] {
+    font-size: 8rem;
+  }
+
+  .lg\:text-\[30rem\] {
+    font-size: 30rem;
+  }
 }
 
 .\[\&\>div\]\:z-\[60\]>div {

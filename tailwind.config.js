@@ -10,6 +10,7 @@ module.exports = {
         myblue: "#3a85ff",
         mygreen: "#00ddb3",
         myviolet: "#7b61ff",
+        mypink: "#f60195",
       },
       fontFamily: {
         "instrument-serif": ['"Instrument Serif"'],

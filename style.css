@@ -7,3 +7,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.grid-areas {
+  grid-template-areas:
+    "a a a c"
+    "b b d c"
+    "e e e e";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@layer components {
+  .neobrutalism {
+    @apply border-4 border-black rounded-lg shadow-neobrutalism transition-all duration-300 z-[60];
+  }
+  .neobrutalism-hover {
+    @apply hover:-translate-x-[6px] hover:-translate-y-[6px] hover:shadow-neobrutalismHover;
+  }
+}

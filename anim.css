@@ -1,0 +1,115 @@
+@keyframes square1 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateX(130%);
+  }
+  50% {
+    transform: translateX(130%) translateY(-130%);
+  }
+  75% {
+    transform: translateX(0) translateY(-130%);
+  }
+  130% {
+    transform: translate(0);
+    background-color: red;
+  }
+}
+
+@keyframes square2 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateY(-130%);
+  }
+  50% {
+    transform: translateX(-130%) translateY(-130%);
+  }
+  75% {
+    transform: translateX(-130%) translateY(0);
+  }
+  130% {
+    transform: translate(0);
+    background-color: green;
+  }
+}
+
+@keyframes square3 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateX(-130%);
+  }
+  50% {
+    transform: translateX(-130%) translateY(130%);
+  }
+  75% {
+    transform: translateX(0) translateY(130%);
+  }
+  130% {
+    transform: translate(0);
+    background-color: blue;
+  }
+}
+
+@keyframes square4 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateY(130%);
+  }
+  50% {
+    transform: translateX(130%) translateY(130%);
+  }
+  75% {
+    transform: translateX(0) translateY(-130%);
+  }
+  130% {
+    transform: translate(0);
+    background-color: yellow;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
+}
+
+.anim-circle {
+  animation: circle 5s infinite linear;
+}
+
+.anim-square1 {
+  animation: square1 10s infinite linear;
+}
+.anim-square2 {
+  animation: square2 10s infinite linear;
+}
+.anim-square3 {
+  animation: square3 10s infinite linear;
+}
+.anim-square4 {
+  animation: square4 10s infinite linear;
+}
+
+@keyframes my-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.my-spin {
+  animation: my-spin 20s infinite linear;
+}
+
+.my-spin-rev {
+  animation: my-spin 20s reverse infinite linear;
+}

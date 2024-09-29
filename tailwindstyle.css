@@ -732,16 +732,16 @@ video {
   width: 66.666667%;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-\[600px\] {
   width: 600px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .max-w-full {
@@ -772,16 +772,8 @@ video {
   cursor: default;
 }
 
-.snap-none {
-  scroll-snap-type: none;
-}
-
 .snap-start {
   scroll-snap-align: start;
-}
-
-.snap-end {
-  scroll-snap-align: end;
 }
 
 .snap-center {
@@ -792,12 +784,8 @@ video {
   scroll-snap-stop: always;
 }
 
-.scroll-p-\[100px\] {
-  scroll-padding: 100px;
-}
-
-.scroll-p-\[200px\] {
-  scroll-padding: 200px;
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -810,10 +798,6 @@ video {
 
 .grid-cols-\[repeat\(3\2c 1fr\)\] {
   grid-template-columns: repeat(3,1fr);
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -908,7 +892,7 @@ video {
 
 .bg-mygreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 221 179 / var(--tw-bg-opacity));
+  background-color: rgb(2 255 117 / var(--tw-bg-opacity));
 }
 
 .bg-myorange {
@@ -941,11 +925,11 @@ video {
 }
 
 .bg-green-to-blue {
-  background-image: linear-gradient(175.2deg, #00ddb3 0%, #00ddb3 48.5%, #000000 48.5%, #000000 51.5%, #3a85ff 51.5%, #3a85ff 100%);;
+  background-image: linear-gradient(175.2deg, #02ff75 0%, #02ff75 48.5%, #000000 48.5%, #000000 51.5%, #3a85ff 51.5%, #3a85ff 100%);;
 }
 
 .bg-violet-to-green {
-  background-image: linear-gradient(-175.2deg, #7b61ff 0%, #7b61ff 48.5%, #000000 48.5%, #000000 51.5%, #00ddb3 51.5%, #00ddb3 100%);;
+  background-image: linear-gradient(-175.2deg, #7b61ff 0%, #7b61ff 48.5%, #000000 48.5%, #000000 51.5%, #02ff75 51.5%, #02ff75 100%);;
 }
 
 .bg-yellow-to-violet {
@@ -1270,24 +1254,6 @@ video {
   padding: 0.75rem;
 }
 
-.placeholder\:\[\&\>\*\]\:p-4>*::-moz-placeholder {
-  padding: 1rem;
-}
-
-.placeholder\:\[\&\>\*\]\:p-4>*::placeholder {
-  padding: 1rem;
-}
-
-.placeholder\:\[\&\>\*\]\:px-4>*::-moz-placeholder {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.placeholder\:\[\&\>\*\]\:px-4>*::placeholder {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .placeholder\:\[\&\>\*\]\:text-black>*::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1415,6 +1381,11 @@ video {
   background-color: rgb(255 112 2 / var(--tw-bg-opacity));
 }
 
+.\[\&\>div\]\:bg-myyellow>div {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 191 0 / var(--tw-bg-opacity));
+}
+
 .\[\&\>div\]\:bg-white>div {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1422,6 +1393,10 @@ video {
 
 .\[\&\>div\]\:p-2>div {
   padding: 0.5rem;
+}
+
+.\[\&\>div\]\:p-8>div {
+  padding: 2rem;
 }
 
 .\[\&\>div\]\:text-center>div {
@@ -1453,29 +1428,29 @@ video {
   position: absolute;
 }
 
+.before\:\[\&\>div\]\:-top-\[110\%\]>div::before {
+  content: var(--tw-content);
+  top: -110%;
+}
+
 .before\:\[\&\>div\]\:left-1\/2>div::before {
   content: var(--tw-content);
   left: 50%;
 }
 
-.before\:\[\&\>div\]\:top-\[-100\%\]>div::before {
+.before\:\[\&\>div\]\:block>div::before {
   content: var(--tw-content);
-  top: -100%;
+  display: block;
 }
 
-.before\:\[\&\>div\]\:hidden>div::before {
+.before\:\[\&\>div\]\:h-full>div::before {
   content: var(--tw-content);
-  display: none;
+  height: 100%;
 }
 
-.before\:\[\&\>div\]\:h-\[200px\]>div::before {
+.before\:\[\&\>div\]\:w-\[250px\]>div::before {
   content: var(--tw-content);
-  height: 200px;
-}
-
-.before\:\[\&\>div\]\:w-\[200px\]>div::before {
-  content: var(--tw-content);
-  width: 200px;
+  width: 250px;
 }
 
 .before\:\[\&\>div\]\:-translate-x-1\/2>div::before {
@@ -1484,10 +1459,44 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.before\:\[\&\>div\]\:bg-myyellow>div::before {
+.before\:\[\&\>div\]\:scale-x-0>div::before {
+  content: var(--tw-content);
+  --tw-scale-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:\[\&\>div\]\:rounded-lg>div::before {
+  content: var(--tw-content);
+  border-radius: 0.5rem;
+}
+
+.before\:\[\&\>div\]\:border-4>div::before {
+  content: var(--tw-content);
+  border-width: 4px;
+}
+
+.before\:\[\&\>div\]\:border-black>div::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.before\:\[\&\>div\]\:bg-myblue>div::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(255 191 0 / var(--tw-bg-opacity));
+  background-color: rgb(58 133 255 / var(--tw-bg-opacity));
+}
+
+.before\:\[\&\>div\]\:transition-transform>div::before {
+  content: var(--tw-content);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.before\:\[\&\>div\]\:duration-300>div::before {
+  content: var(--tw-content);
+  transition-duration: 300ms;
 }
 
 .hover\:\[\&\>div\]\:-translate-x-\[6px\]>div:hover {
@@ -1512,23 +1521,14 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:before\:\[\&\>div\]\:block>div:hover::before {
+.hover\:before\:\[\&\>div\]\:scale-x-100>div:hover::before {
   content: var(--tw-content);
-  display: block;
+  --tw-scale-x: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px) {
   .sm\:\[\&\>div\]\:w-auto>div {
     width: auto;
   }
-}
-
-.placeholder\:\[\&\>input\]\:text-black>input::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.placeholder\:\[\&\>input\]\:text-black>input::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }

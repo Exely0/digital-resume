@@ -83,6 +83,19 @@
   }
 }
 
+@keyframes tooltips {
+  100% {
+    width: 250px;
+    background-color: red;
+  }
+}
+
+.tooltip {
+  width: 200px;
+  transform: rotate(90deg);
+  animation: tooltips 2s linear;
+}
+
 .anim-circle {
   animation: circle 5s infinite linear;
 }

@@ -740,6 +740,10 @@ video {
   width: 100%;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -768,12 +772,32 @@ video {
   cursor: default;
 }
 
+.snap-none {
+  scroll-snap-type: none;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-end {
+  scroll-snap-align: end;
+}
+
 .snap-center {
   scroll-snap-align: center;
 }
 
 .snap-always {
   scroll-snap-stop: always;
+}
+
+.scroll-p-\[100px\] {
+  scroll-padding: 100px;
+}
+
+.scroll-p-\[200px\] {
+  scroll-padding: 200px;
 }
 
 .grid-cols-2 {
@@ -786,6 +810,10 @@ video {
 
 .grid-cols-\[repeat\(3\2c 1fr\)\] {
   grid-template-columns: repeat(3,1fr);
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1207,6 +1235,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:text-\[20rem\] {
     font-size: 20rem;
   }
@@ -1236,6 +1268,34 @@ video {
 
 .\[\&\>\*\]\:p-3>* {
   padding: 0.75rem;
+}
+
+.placeholder\:\[\&\>\*\]\:p-4>*::-moz-placeholder {
+  padding: 1rem;
+}
+
+.placeholder\:\[\&\>\*\]\:p-4>*::placeholder {
+  padding: 1rem;
+}
+
+.placeholder\:\[\&\>\*\]\:px-4>*::-moz-placeholder {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.placeholder\:\[\&\>\*\]\:px-4>*::placeholder {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.placeholder\:\[\&\>\*\]\:text-black>*::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:\[\&\>\*\]\:text-black>*::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .\[\&\>\.timeline-diag\]\:h-\[70px\]>.timeline-diag {
@@ -1461,4 +1521,14 @@ video {
   .sm\:\[\&\>div\]\:w-auto>div {
     width: auto;
   }
+}
+
+.placeholder\:\[\&\>input\]\:text-black>input::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:\[\&\>input\]\:text-black>input::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }

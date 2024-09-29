@@ -66,7 +66,7 @@
     </div>
     <!--end oblic orange-->
     <!--start yellow-->
-    <div class="snap-center snap-always">
+    <div class="snap-always snap-start">
       <!--start yellow main-->
       <div
         class="flex h-[1300px] cursor-default items-center justify-center gap-4 bg-myyellow font-instrument-serif text-[10rem] md:text-[20rem] lg:text-[30rem] font-bold tracking-wide [&>div]:z-[60] [&>div]:capitalize [&>div]:transition-all [&>div]:duration-300 hover:[&>div]:scale-[115%]"
@@ -85,10 +85,10 @@
     <!--end yellow-->
 
     <!--start violet-->
-    <div class="scroll-padding: 100px snap-center snap-always">
+    <div class="snap-center snap-always">
       <!--start violet main-->
       <div
-        class="grid h-[1500px] grid-cols-2 gap-8 bg-myviolet px-24 text-black [&>div]:justify-self-center [&>div]:self-center"
+        class="grid h-[1500px] grid-cols-1 md:grid-cols-2 gap-8 bg-myviolet px-24 text-black [&>div]:justify-self-center [&>div]:self-center"
       >
         <div class="">
           <div
@@ -134,7 +134,16 @@
           </div>
           <div class="bg-mygreen" style="grid-area: c"></div>
           <div class="bg-myblue" style="grid-area: b"></div>
-          <div class="bg-mypink" style="grid-area: d"></div>
+          <div
+            class="bg-mypink flex items-center justify-center"
+            style="grid-area: d"
+          >
+            <img
+              class="w-4/5 h-auto object-cover"
+              src="./images//fioritures/star.svg"
+              alt="star"
+            />
+          </div>
           <div class="bg-myorange" style="grid-area: e"></div>
         </div>
       </div>
@@ -144,7 +153,7 @@
     <!--end violet-->
 
     <!--start green-->
-    <div class="scroll-padding: 100px snap-center snap-always text-black">
+    <div class="snap-center snap-always text-black">
       <!--start green main-->
       <div
         class="grid h-[1500px] grid-cols-2 bg-mygreen px-24 [&>div]:items-center [&>div]:justify-center"
@@ -175,7 +184,7 @@
     <!--end green-->
 
     <!--start blue-->
-    <div class="scroll-padding: 100px snap-center snap-always text-black">
+    <div class="snap-center snap-always text-black">
       <!--start blue main-->
       <div
         class="grid h-[1500px] grid-cols-[2fr_3fr] gap-[8rem] bg-myblue px-24 [&>div]:flex [&>div]:items-center"
@@ -260,7 +269,7 @@
     </div>
     <!--end blue-->
     <!--start orange-->
-    <div class="scroll-padding-[100px] snap-center snap-always text-black">
+    <div class="snap-center snap-always text-black">
       <!--start orange main-->
       <div
         class="h-[1500px] flex items-center justify-center bg-myorange px-24"
@@ -275,7 +284,7 @@
             class="row-[2] col-[2] py-4 px-8 text-[2rem] self-stretch text-center font-semibold neobrutalism hover:neobrutalism-hover bg-mygreen"
           >
             <form
-              class="flex flex-col gap-4 [&>*]:neobrutalism [&>*]:p-3 [&>*]:neobrutalism-hover text-black"
+              class="flex flex-col gap-4 placeholder:[&>*]:text-black [&>*]:neobrutalism [&>*]:p-3 [&>*]:neobrutalism-hover text-black"
             >
               <input
                 type="text"

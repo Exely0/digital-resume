@@ -30,6 +30,24 @@ module.exports = {
         neobrutalism: "6px 6px 0 0 black",
         neobrutalismHover: "12px 12px 0 0 black",
       },
+      keyframes: {
+        "tooltip-kf": {
+          "0%": {
+            opacity: "0",
+          },
+          "20%": {
+            opacity: "1",
+            transform: "scaleX(0.2) translateX(-25%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scaleX(1) translateX(-25%)",
+          },
+        },
+      },
+      animation: {
+        tooltip: "tooltip-kf 0.5s linear forwards",
+      },
     },
   },
   plugins: [],

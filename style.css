@@ -6,17 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: bold;
 }
-
-/* html {
-  font-size: 16px;
-  @screen md {
-    font-size: 17px;
-  }
-  @screen lg {
-    font-size: 18px;
-  }
-} */
 
 .diag-lr {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M1 0 L0 1 L99 100 L100 99' stroke='black' stroke-width='9' /></svg>");
@@ -47,7 +38,7 @@
 
 @layer components {
   .neobrutalism {
-    @apply border-4 border-black rounded-lg shadow-neobrutalism transition-all duration-300 z-[60];
+    @apply z-[60] rounded-lg border-4 border-black shadow-neobrutalism transition-all duration-300;
   }
   .neobrutalism-hover {
     @apply hover:-translate-x-[6px] hover:-translate-y-[6px] hover:shadow-neobrutalismHover;
